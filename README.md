@@ -4,14 +4,11 @@
 Este proyecto consiste en un script en Bash que automatiza tareas administrativas en Linux, incluyendo el respaldo de directorios, la generación de informes de uso de recursos y la eliminación de archivos temporales.
 
 ## Instrucciones de Uso
-1. Abre una terminal y navega al directorio donde se encuentran los archivos del proyecto:
+1. Abre una terminal y navega al directorio donde se encuentran los archivos del proyecto: cd comandos.bash
    
-   cd comandos.bash
+2. Permisos de ejecucion del script: chmod +x auto.sh
 
-2. PERMISOS DE EJECUCION AL SCRPIT CON. chmod +x auto.sh
-
-
-3. PARA EJECUTAR EL SCRIPT..  ./auto.sh 
+3. Para ejecutar el script:  ./auto.sh 
 
 4. Selecciona una opcion del menu que aparece en la terminal.
 
