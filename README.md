@@ -8,11 +8,10 @@ Este proyecto consiste en un script en Bash que automatiza tareas administrativa
    
    cd comandos.bash
 
-## Da permisos de ejecucion al script
-2. chmod +x auto.sh
+2. PERMISOS DE EJECUCION AL SCRPIT CON. chmod +x auto.sh
 
-## Ejecuta el script
-3. ./auto.sh 
+
+3. PARA EJECUTAR EL SCRIPT..  ./auto.sh 
 
 4. Selecciona una opcion del menu que aparece en la terminal.
 
