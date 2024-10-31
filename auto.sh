@@ -1,6 +1,7 @@
 #!/bin/bash
 
 
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
@@ -50,7 +51,7 @@ function eliminar_cache() {
 
 while true; do
     echo -e "${BLUE}Seleccione una opción:${NC}"
-    echo -e "${YELLOW}1) Respaldo de un directorio${NC}"
+    echo -e "${YELLOW}1) Respaldo del directorio${NC}"
     echo -e "${YELLOW}2) Informe de uso de recursos${NC}"
     echo -e "${YELLOW}3) Eliminar archivos temporales${NC}"
     echo -e "${YELLOW}4) Salir${NC}"
