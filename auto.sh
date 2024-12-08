@@ -10,8 +10,17 @@ NC='\033[0m'
 
 function respaldo() {
     echo -e "${BLUE}Iniciando respaldo...${NC}"
-    tar -czf ./backup_$(date +%Y%m%d).tar.gz ./
-    echo -e "${GREEN}Respaldo completado.${NC}"
+    
+    
+    BACKUP_FILE="./backup_$(date +%Y%m%d).tar.gz"
+    tar -czf "$BACKUP_FILE" ./
+    
+    
+    if [ -f "$BACKUP_FILE" ]; then
+        echo -e "${GREEN}Respaldo completado con éxito: $BACKUP_FILE${NC}"
+    else
+        echo -e "${RED}Hubo un error al realizar el respaldo.${NC}"
+    fi
 }
 
 
@@ -28,9 +37,12 @@ function informe() {
         echo
         echo "Uso de disco:"
         df -h
-        echo
+        echo  
     } > uso_recursos.log
+
+    cat uso_recursos.log
     echo -e "${GREEN}Informe completo generado en uso_recursos.log.${NC}"
+
 }
 
 
